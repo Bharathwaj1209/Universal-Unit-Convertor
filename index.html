@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Unit Converter</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="hero">
+        <div class="top-bar">
+            <h1>Universal Unit Converter</h1>
+            <button id="theme-btn" type="button" aria-label="Toggle dark mode">🌙 Dark Mode</button>
+        </div>
+
+        <div class="converter">
+            <input id="number-input" type="number" value="1" step="any" aria-label="Value to convert">
+
+            <div class="unit-row">
+                <select id="category-select" aria-label="Conversion category">
+                    <option value="length">📏 Length</option>
+                    <option value="weight">⚖️ Weight</option>
+                    <option value="temperature">🌡️ Temperature</option>
+                    <option value="volume">🧪 Volume</option>
+                    <option value="time">⏱️ Time</option>
+                </select>
+
+                <select id="from-unit" aria-label="From unit"></select>
+
+                <button id="swap-btn" type="button" title="Swap units">🔄</button>
+
+                <select id="to-unit" aria-label="To unit"></select>
+            </div>
+
+            <button id="convert-btn" type="button">Convert</button>
+        </div>
+    </header>
+
+    <main id="results">
+        <section class="results-container">
+            <div class="result-heading">
+                <h2 id="result-title">Conversion Result</h2>
+                <button id="copy-btn" type="button">📋 Copy Result</button>
+            </div>
+            <p id="result-el" class="result-el">Enter a value and click Convert.</p>
+        </section>
+
+        <section class="results-container history-section">
+            <div class="result-heading">
+                <h2>Conversion History</h2>
+                <button id="clear-history-btn" type="button">Clear</button>
+            </div>
+            <ul id="history-list">
+                <li class="empty-history">No conversions yet.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
