@@ -3,6 +3,14 @@
 A simple and user-friendly web-based unit converter built using **HTML, CSS, and JavaScript**.
 
 The project allows users to convert values between different units across multiple categories.
+## 🚀 Live Demo
+
+Try the Universal Unit Converter online:
+
+👉 **[Live Demo](https://bharathwaj1209.github.io/Universal-Unit-Convertor/)**
+
+No installation required — open the link and start converting units directly in your browser.
+
 
 ## ✨ Features
 
